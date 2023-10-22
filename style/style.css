@@ -16,7 +16,8 @@ header {
     justify-content: space-between;
     align-items: center;
     background-color: #F5E6CA;
-    padding-left: 15px;
+    padding-left: 20px;
+    padding-right: 20px;
     height: 8vh;
     z-index: 1;
 }
@@ -26,12 +27,26 @@ header {
     overflow: hidden;
     top: 0;
 }
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: cent
+}
 .logo{
     font-family: 'Amarante', serif;
     color: #3D4C6C;
     text-decoration: none;
     letter-spacing: 10px;
     font-size: 40px;
+    margin-right: 10px;
+}
+input[type=text]{
+    width: 218px;
+    border: 2px solid #3D4C6C;
+    border-radius: 25px;
+    background-color: #F8EFEF;
+    padding: 8px 20px;
+    margin: 8px 0;
 }
 .nav_links a {
     font-family: 'Amarante', serif;
@@ -44,7 +59,7 @@ header {
     font-size: 26px;
 }
 .nav_links li {
-    padding: 0px 20px;
+    padding: 5px 20px;
 }
 .login{
     background-color: #CFA180;
@@ -52,10 +67,9 @@ header {
     text-decoration: none;
     font-family: 'Amarante', serif;
     font-size: 26px;
-    /* padding: 5px; */
+    padding: 5px;
     padding-left: 25px;
     padding-right: 25px;
-    height: inherit;
 }
 
 /* LANDING PAGE */
@@ -80,22 +94,71 @@ header {
 .quote h1{
     font-family: 'Amarante', serif;
     font-size: 128px;
+    font-weight: 300;
 }
 .quote p{
     font-size: 16px;
 }
 .register h4{
     font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.register a.login-redirect{
+    text-decoration: none;
+    color: #F5E6CA;
+    font-weight: bold;
+}
+.register p{
+    font-size: 16px;
+    margin-top: 10px;
 }
 .button{
     font-family: 'Amarante', serif;
     display: inline-block;
     text-decoration: none;
     border: 1px solid #F5E6CA;
-    border-radius: 20px;
-    padding: 12px 34px;
-    font-size: 13px;
-    background: transparent;
+    background-color: #F5E6CA;
+    color: #3D4C6C;
+    border-radius: 35px;
+    padding: 5px 15px;
+    margin-left: 35px;
+    margin-right: 35px;
+    font-size: 30px;
     position: relative;
     cursor: pointer;
+}
+
+/* BUYER HOME */
+.home{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.home h4{
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.contents{
+    background-color: #F5E6CA;
+    height: 150px;
+    border-radius: 15px;
+    color: #3D4C6C;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+}
+.upcoming{
+    display: flex;
+}
+.dop, .eta, .payments{
+    padding: 25px;
+    padding-right: 65px;
 }
