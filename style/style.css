@@ -154,11 +154,21 @@ input[type=text]{
     display: flex;
     justify-content: space-between;
     padding: 15px;
+    padding-left: 35px;
+    padding-right: 35px;
 }
 .upcoming{
     display: flex;
 }
 .dop, .eta, .payments{
     padding: 25px;
-    padding-right: 65px;
+}
+.dop{
+    padding-right: 70px;
+}
+.dop, .eta{
+    width: 552px;
+}
+.payments{
+    width: 1104px;
 }
