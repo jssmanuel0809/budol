@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+body{
+    background-color: #3D4C6C;
+    color: #F5E6CA;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F5E6CA;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 8vh;
+    z-index: 1;
+}
+.header{
+    width: 100%;
+    position: fixed;        
+    overflow: hidden;
+    top: 0;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: cent
+}
+.logo{
+    font-family: 'Amarante', serif;
+    color: #3D4C6C;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin-right: 10px;
+}
+input[name="search"]{
+    width: 218px;
+    border: 2px solid #3D4C6C;
+    border-radius: 25px;
+    background-color: #F8EFEF;
+    padding: 8px 20px;
+    margin: 8px 0;
+}
+.nav_links a {
+    font-family: 'Amarante', serif;
+    color: #3D4C6C;
+    text-decoration: none;
+}
+.nav_links {
+    list-style: none;
+    display: flex;
+    font-size: 26px;
+}
+.nav_links li {
+    padding: 5px 20px;
+}
+
+/* CONTENTS */
+.box{
+  /* min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center; */
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  display: flex;
+  margin-top: 50px;
+}
+.box-contents{
+  width: 840px;
+  height: 580px;
+  background-color: #F5E6CA;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+/* forms */
+fieldset{
+    border: none;
+}
+.gr1{
+    display: flex;
+}
+input[name="name"],input[name="phone"]{
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3D4C6C;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #F8EFEF;
+  }
+.gr2{
+    display: flex;
+}
+input[name="city"],input[name="zip"]{
+    width: 200px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3D4C6C;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #F8EFEF;
+  }
+.gr3{
+    display: flex;
+}
+input[name="address"] {
+    width: 750px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3D4C6C;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #F8EFEF;
+  }
+.gr4{
+    display: flex;
+}
+input[name="email"],input[name="password"] {
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3D4C6C;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #F8EFEF;
+  }
+.gr5{
+    display: flex;
+}
+input[name="username"],input[name="confirm"] {
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3D4C6C;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #F8EFEF;
+  }
+/* dropdown */
+.box-contents p{
+    font-size: 24px;
+    color: #000;
+    opacity: 40%;
+    text-align: left;
+}
+.month-btn, .day-btn, .year-btn {
+    width: 125px;
+    height: 45px;
+    background-color: #F8EFEF;
+    border-radius: 30px;
+    border: 2px solid #3D4C6C;
+    font-size: 20px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+}
+.gender-btn{
+    width: 350px;
+    height: 45px;
+    background-color: #F8EFEF;
+    border-radius: 30px;
+    border: 2px solid #3D4C6C;
+    font-size: 20px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+}
