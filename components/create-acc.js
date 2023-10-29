@@ -1,5 +1,5 @@
 function toggleContainer() {
-  var container = document.getElementById("box-container");
+  var container = document.getElementById("box");
   var buttonContainer = document.getElementById("buttonContainer");
 
   // Check if the new buttons already exist
@@ -21,7 +21,7 @@ function toggleContainer() {
       buttonContainer.appendChild(newButton);
     }
     // Set background color and expand container when showing buttons
-    container.style.backgroundColor = '#f2f2f2';
-    container.style.height = buttonContainer.offsetHeight + 'px';
+    container.style.backgroundColor = '#F8EFEF';
+    container.style.height = "450px";
   }
 }
