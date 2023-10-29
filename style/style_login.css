@@ -90,6 +90,8 @@ input[name="search"]{
   flex-direction: column;
   align-items: center;
   padding: 10px;
+  overflow: hidden; /* Hide the overflow when collapsed */
+  transition: height 0.3s ease; /* Add smooth transition for height changes */
 }
 input[name="username/email"],input[name="password"]{
   width: 365px;
@@ -103,6 +105,7 @@ input[name="username/email"],input[name="password"]{
 .login-button{
   width: 365px;
   height: 45px;
+  cursor: pointer;
   border-radius: 30px;
   background-color: #CFA180;
   border: 2px solid #3D4C6C;
@@ -122,17 +125,7 @@ hr.solid{
   margin-top: 20px;
   border-top: 2px solid #3D4C6C;
 }
-.create-button{
-  width: 365px;
-  height: 75px;
-  border-radius: 30px;
-  background-color: #CFA180;
-  border: 2px solid #3D4C6C;
-  margin-top: 5px;
-  color: #F8EFEF;
-  font-weight: bolder;
-  font-size: 20px;
-}
+
 .quote{
   margin-right: 115px;
 }
@@ -143,4 +136,37 @@ hr.solid{
 }
 .quote p{
   font-size: 16px;
+}
+/*buttons*/
+#toggleButton{
+  display: inline-block;
+  background-color: #CFA180;
+  border: 2px solid #3D4C6C;
+  color: #F8EFEF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
+  padding: 10px;
+  width: 365px;
+  height: 75px;
+  cursor: pointer;
+  margin: 5px;
+  border-radius: 30px;
+  text-decoration: none;
+}
+/* Additional styling for the new buttons */
+.newButton {
+  margin-top: 10px;
+  padding: 8px 15px;
+  background-color: #2ecc71;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.newButton:hover {
+  background-color: #27ae60;
 }

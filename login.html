@@ -37,14 +37,20 @@
             </p>
         </div>
           <div class="box">
-            <div class="box-contents">
+            <div id="content" class="box-contents">
               <input type="text" id="username/email" name="username/email" placeholder="username/email">
               <input type="text" id="password" name="password" placeholder="password">
-              <button class="login-button" type="button">LOGIN</button>
+              <button class="login-button" onclick="login-button()">LOGIN</button>
               <a class="forgot" href="">FORGOTTEN PASSWORD?</a>
               <hr class="solid">
-              <button class="create-button" type="button">CREATE <br>ACCOUNT</button>
             </div>
+            <div id="box-container" class="btn">
+                <button id="toggleButton" onclick="toggleContainer()">CREATE <br> ACCOUNT</button>
+              </div>
+            
+              <div id="buttonContainer"></div>
+            
+              <script src="components/create-acc.js"></script>
           </div>
         </section>
     </body>
