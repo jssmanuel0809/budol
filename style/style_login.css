@@ -80,7 +80,6 @@ input[name="search"]{
 }
 .box{
   width: 450px;
-  height: 400px;
   background-color: #F8EFEF;
   border-radius: 10px;
 }
@@ -137,6 +136,7 @@ hr.solid{
 .quote p{
   font-size: 16px;
 }
+
 /*buttons*/
 #toggleButton{
   display: inline-block;
@@ -154,19 +154,18 @@ hr.solid{
   border-radius: 30px;
   text-decoration: none;
 }
-/* Additional styling for the new buttons */
 .newButton {
-  margin-top: 10px;
-  padding: 8px 15px;
-  background-color: #2ecc71;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  font-size: 14px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  width: 180px;
+  height: 45px;
+  background-color: #CFA180;
+  border: 2px solid #3D4C6C;
+  border-radius: 30px;
+  color: #F8EFEF;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bolder;
   margin-right: 10px;
   cursor: pointer;
-}
-
-.newButton:hover {
-  background-color: #27ae60;
 }
