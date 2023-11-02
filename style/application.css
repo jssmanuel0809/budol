@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     margin: 0;
-    padding: 0;
     scroll-behavior: smooth;
     font-family: 'Darker Grotesque', sans-serif;
 }
@@ -63,19 +62,21 @@ input[name="search"]{
 }
 
 /* CONTENTS */
+.apply{
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
 .box{
-  /* min-height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center; */
-  width: 90%;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  text-align: center;
-  display: flex;
-  margin-top: 50px;
+  width: 450px;
+  background-color: #F8EFEF;
+  border-radius: 10px;
 }
 .box-contents{
   width: 840px;
@@ -83,6 +84,8 @@ input[name="search"]{
   background-color: #F5E6CA;
   border-radius: 10px;
   padding: 10px;
+  margin-top: 50px;
+  margin-right: 20px;
 }
 
 /* forms */
@@ -91,6 +94,7 @@ fieldset{
 }
 .gr1{
     display: flex;
+    justify-content: space-evenly;
 }
 input[name="name"],input[name="phone"]{
     width: 350px;
@@ -113,13 +117,15 @@ input[name="city"],input[name="zip"]{
     border-radius: 30px;
     padding: 8px 10px 10px 10px;
     margin: 8px 0;
+    margin-left: 30px;
     background-color: #F8EFEF;
   }
 .gr3{
     display: flex;
+    justify-content: space-evenly;
 }
 input[name="address"] {
-    width: 750px;
+    width: 735px;
     height: 45px;
     font-size: 20px;
     border: 2px solid #3D4C6C;
@@ -130,6 +136,7 @@ input[name="address"] {
   }
 .gr4{
     display: flex;
+    justify-content: space-evenly;
 }
 input[name="email"],input[name="password"] {
     width: 350px;
@@ -143,6 +150,7 @@ input[name="email"],input[name="password"] {
   }
 .gr5{
     display: flex;
+    justify-content: space-evenly;
 }
 input[name="username"],input[name="confirm"] {
     width: 350px;
@@ -160,6 +168,7 @@ input[name="username"],input[name="confirm"] {
     color: #000;
     opacity: 40%;
     text-align: left;
+    margin-left: 50px;
 }
 .month-btn, .day-btn, .year-btn {
     width: 125px;
@@ -181,3 +190,27 @@ input[name="username"],input[name="confirm"] {
     padding: 8px 10px 10px 10px;
     margin: 8px 0;
 }
+.create-button{
+    width: 365px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #CFA180;
+    border: 2px solid #3D4C6C;
+    border-color: #3D4C6C;
+    margin-top: 5px;
+    color: #F8EFEF;
+    font-weight: bolder;
+    font-size: 20px;
+}
+.quote{
+    margin-right: 115px;
+  }
+  .quote h1{
+    font-family: 'Amarante', serif;
+    font-size: 105px;
+    font-weight: 300;
+  }
+  .quote p{
+    font-size: 16px;
+  }
