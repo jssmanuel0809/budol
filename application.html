@@ -60,15 +60,81 @@
                     <input type="text" id="confirm" name="confirm" placeholder="Confirm Password">
                 </fieldset>
                 <!-- forms end -->
-                <!-- buttons -->
+                <!-- bday dropdown -->
                 <p>Date of Birth</p>
-                <fieldset class="dropdown">
-                <button class="month-btn" type="button">Month</button>
-                <button class="day-btn" type="button">Day</button>
-                <button class="year-btn" type="button">Year</button>
-                <button class="gender-btn" type="button">Gender</button>
-                </fieldset>
-                <button class="create-button" onclick="create-btn()">CREATE ACCOUNT</button>
+                <fieldset class="box-dropdown">
+                <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Month</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="monthDropdown">
+                      <!-- Month dropdown content -->
+                      <span class="selected-display" id="monthDisplay">Pick a month!</span>
+                      <svg class="arrow" id="monthArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Day</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="dayDropdown">
+                      <!-- Day dropdown content -->
+                      <span class="selected-display" id="dayDisplay">Pick a day!</span>
+                      <svg class="arrow" id="dayArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Year</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="yearDropdown">
+                      <!-- Year dropdown content -->
+                      <span class="selected-display" id="yearDisplay">Pick a year!</span>
+                      <svg class="arrow" id="yearArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="gender-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h10>Gender</h10>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="genderDropdown">
+                      <!-- Gender dropdown content -->
+                      <span class="selected-display" id="genderDisplay">Pick a gender!</span>
+                      <svg class="arrow" id="genderArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+            
+              <script src="script.js"></script>
                 </div>
             </div>
         </section>
