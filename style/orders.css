@@ -89,7 +89,7 @@ input[type=text]{
     padding-right: 70px;
     width: 95%;
 }
-.box-contents{
+.order-box-contents{
     background-color: #F5E6CA;
     height: 450px;
     border-radius: 10px;
@@ -104,7 +104,7 @@ input[type=text]{
     padding-right: 50px;
     position: relative;
 }
-.box-contents::after {
+.order-box-contents::after {
     content: '';
     position: absolute;
     width: 95%;
