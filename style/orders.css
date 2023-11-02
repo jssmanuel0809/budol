@@ -89,7 +89,7 @@ input[type=text]{
     padding-right: 70px;
     width: 95%;
 }
-.box-contents{
+.order-box-contents{
     background-color: #F5E6CA;
     height: 450px;
     border-radius: 10px;
@@ -104,7 +104,7 @@ input[type=text]{
     padding-right: 50px;
     position: relative;
 }
-.box-contents::after {
+.order-box-contents::after {
     content: '';
     position: absolute;
     width: 95%;
@@ -216,4 +216,82 @@ input[type=text]{
     font-size: 15px;
     text-align: right;
     cursor: pointer;
+}
+
+/* USER PROFILE */
+.profile{
+    width: 95%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    margin-top: -100px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+.a-profile-pic {
+    width: 15%;
+    max-height: 15%;
+    border-radius: 50%;
+}
+
+.b-profile-pic {
+    width: 35%;
+    max-height: 20%;
+    border-radius: 50%;
+}
+.profile-links{
+    flex-basis: 30%;
+    margin-top: 300px;
+}
+.links-box-rows{
+    display: flex;
+    padding-right: 100px;
+    width: 100%;
+}
+.profile-info{
+    flex-flow: column wrap;
+    flex-grow: 1;
+    height: 100%;
+}
+.links-column{
+    margin-top: 10px;
+    margin-left: 15px;
+}
+.profile-info{
+    background-color: #F5E6CA;
+    height: 450px;
+    border-radius: 10px;
+    margin-left: 35px;
+    margin-top: 300px;
+    color: #3D4C6C;
+    display: flex;
+    row-gap: 50px;
+    justify-content: space-between;
+    width: 120%;
+    height: 600px;
+    padding: 15px;
+    padding-left: 50px;
+    padding-right: 100px;
+    position: relative;
+}
+.info-contents{
+    flex-basis: 50%;
+    display: flex;
+}
+.text-column{
+    margin-top: -100px;
+}
+.header-profile h4{
+    font-family: 'Amarante', serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.header-profile p{
+    margin-top: -22px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
