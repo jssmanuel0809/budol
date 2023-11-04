@@ -1,5 +1,3 @@
-// Existing JavaScript code remains unchanged
-
 // Function to create a scrollable dropdown
 function createScrollableDropdown(containerId, options, displayId) {
   const container = document.getElementById(containerId);
@@ -23,7 +21,7 @@ function createScrollableDropdown(containerId, options, displayId) {
   container.appendChild(ul);
 }
 
-// Populate scrollable dropdowns for month, day, year, and gender
+//dropdowns for month, day, year, and gender
 createScrollableDropdown(
   "monthDropdown",
   [

@@ -66,7 +66,9 @@ input[name="search"] {
   height: 370px;
   background-color: #f5e6ca;
   border-radius: 10px;
-  padding: 0px;
+  padding: 10px;
+  margin-top: 50px;
+  margin-right: 50px;
 }
 
 /* FORMS */
@@ -75,6 +77,7 @@ fieldset {
 }
 .gr1 {
   display: flex;
+  justify-content: space-evenly;
 }
 input[name="name"],
 input[name="phone"] {
@@ -88,10 +91,11 @@ input[name="phone"] {
     background-color: #f8efef;
 }
 .gr2 {
-    display: flex;
-  }
-  input[name="email"],
-  input[name="reference"] {
+  display: flex;
+  justify-content: space-evenly;
+}
+input[name="seller"],
+input[name="email"] {
     width: 350px;
     height: 45px;
     font-size: 20px;
@@ -99,6 +103,196 @@ input[name="phone"] {
     border-radius: 30px;
     padding: 8px 10px 10px 10px;
     margin: 8px 0;
-    margin-left: 30px;
     background-color: #f8efef;
-  }
+}
+
+/* DROPDOWN */
+.box-dropdown {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: -20px !important;
+  letter-spacing: 0.8px;
+  text-align: center;
+}
+.setting-description {
+  background-color: #f8efef;
+  border-radius: 30px 30px 0px 0px;
+  min-width: 170.5px;
+  width: 100% !important;
+  max-width: 483px;
+}
+.setting-description-text {
+  padding-top: 18px !important;
+  color: #3d4c6c;
+}
+
+/* the code below is for the dropdown menu */
+.wrapper-dropdown {
+  position: relative;
+  display: inline-block;
+  min-width: 170.5px;
+  width: 100% !important;
+  max-width: 483px;
+  padding: 0px 0px 0px 0px;
+  min-height: 44px;
+  border-radius: 0px 0px 30px 30px;
+  background: #f8efef;
+  text-align: left;
+  color: #3d4c6c;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  margin-bottom: 20px;
+  font-family: Arial;
+}
+
+.scrollable-menu {
+  height: auto;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.arrow {
+  margin-left: 10px;
+  margin-right: 10px;
+  float: right;
+  rotate: 180deg;
+}
+
+.selected-display {
+  margin-left: 20px;
+}
+
+svg {
+  transition: all 0.3s;
+}
+
+.wrapper-dropdown::before {
+  position: absolute;
+  top: 50%;
+  right: 16px;
+
+  margin-top: -2px;
+
+  border-width: 6px 6px 0 6px;
+  border-style: solid;
+  border-color: #3d4c6c transparent;
+}
+
+.rotated {
+  transform: rotate(-180deg);
+}
+
+.wrapper-dropdown .dropdown {
+  transition: 0.3s;
+
+  position: absolute;
+  top: 120%;
+  right: 0;
+  left: 0;
+
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  z-index: 99;
+
+  border-radius: 30px;
+  box-shadow: inherit;
+  background: inherit;
+
+  -webkit-transform-origin: top;
+  -moz-transform-origin: top;
+  -ms-transform-origin: top;
+  transform-origin: top;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.wrapper-dropdown .dropdown li {
+  padding: 0 15px;
+  line-height: 45px;
+  overflow: hidden;
+}
+
+.wrapper-dropdown .dropdown li:last-child {
+  border-bottom: none;
+}
+
+.dropdown {
+  padding: 0.5rem !important;
+}
+
+.wrapper-dropdown .dropdown li:hover {
+  background-color: #f8f8ef;
+  border-radius: 10px;
+}
+
+.wrapper-dropdown.active .dropdown {
+  opacity: 1;
+  visibility: visible;
+
+  border-radius: 15px;
+}
+
+.birthday-dropdown {
+  width: calc(25% - 20px);
+  margin-right: 20px;
+}
+
+.create{
+  width: 365px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #CFA180;
+  border: 2px solid #3D4C6C;
+  border-color: #3D4C6C;
+  margin-top: 5px;
+  color: #F8EFEF;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* BUTTON */
+#upload {
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+#upload input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#upload .btn {
+  border: 2px solid gray;
+  color: gray;
+  background-color: white;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#upload .btn:hover {
+  border-color: black;
+  color: black;
+}
