@@ -230,14 +230,9 @@ input[type=text]{
     flex-direction: column;
     align-items: flex-start;
 }
-.a-profile-pic {
-    width: 15%;
-    max-height: 15%;
-    border-radius: 50%;
-}
-.b-profile-pic {
+.left-profile-pic {
     width: 35%;
-    max-height: 20%;
+    height: 35%;
     border-radius: 50%;
 }
 .profile-links{
@@ -248,6 +243,7 @@ input[type=text]{
     display: flex;
     padding-right: 100px;
     width: 100%;
+    margin-left: 30px;
 }
 .profile-info{
     flex-flow: column wrap;
@@ -255,16 +251,45 @@ input[type=text]{
     height: 100%;
 }
 .links-column{
-    margin-top: 10px;
     margin-left: 15px;
+    flex-direction: column;
 }
-.profile-links:after {
+.edit-column{
+    margin-top: 5px;
+    margin-left: 15px;
+    flex-direction: column;
+    font-size: 20px;
+}
+.edit-column a{
+    font-size: 16px;
+    margin-left: 9px;
+    flex-direction: column;
+    color: #7a8aac;
+    text-decoration: none;    
+}
+.button-column{
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+    margin-left: 50px;
+}
+.button-column a{
+    font-size: 16px;
+    margin-left: 20px;
+    color: #7a8aac;
+    text-decoration: none;
+    font-weight: 600;
+}
+.user-profile-button{
+    margin-top: -7px;
+}
+.profile-box-rows:after {
     content: '';
     position: absolute;
     width: 18%;
     left: -5px;
     right: 0;
-    margin-top: -10px;
+    margin-top: 50px;
     padding-bottom: 30px;
     border-bottom: 2px solid #F5E6CA; /* Adjust the color and style as needed */
 }
@@ -285,24 +310,128 @@ input[type=text]{
     padding-right: 100px;
     position: relative;
 }
+.profile-info::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    left: 35px;
+    right: 0;
+    padding-bottom: 30px;
+    margin-top: 60px;
+    border-bottom: 3px solid #3D4C6C; /* Adjust the color and style as needed */
+}
 .info-contents{
     flex-basis: 50%;
     display: flex;
 }
 .text-column{
-    margin-top: -100px;
+    margin-top: -170px;
+    font-size: 20px;
+    margin-left: 50px;
+    letter-spacing: 5px;
 }
-.header-profile h4{
+.text-column p{
+    margin-top: 15px;
+    font-weight: 100;
+}
+.gender-row label{
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: 100;
+}
+.date-row a{
+    width: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #3D4C6C;
+    background-color: white;
+    color: #8b8b8b;
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.month-button{
+    padding: 5px 62px 7px 30px;
+    border-radius: 50px;
+}
+.day-button{
+    padding: 5px 53px 7px 30px;
+    border-radius: 50px;
+}
+.year-button{
+    padding: 5px 80px 7px 30px;
+    border-radius: 50px;
+}
+.user-header-profile h2{
     font-family: 'Amarante', serif;
     font-size: 50px;
     font-weight: 300;
     margin-bottom: 12px;
 }
-.header-profile p{
+.user-header-profile h4{
     margin-top: -22px;
-    font-size: 16px;
-    font-weight: 400;
+    font-size: 21px;
+    font-weight: 500;
     letter-spacing: 5px;
+    margin-left: 3px;
+}
+#name-bar {
+  margin-top: 25px;
+  padding: 10px 20px;
+  border: 3px solid #3D4C6C;
+  font-size: 20px;
+  letter-spacing: 5px;
+  width: 500px;
+}
+#name-bar::placeholder{
+    margin-left: -500px;
+    font-size: 18px;
+    letter-spacing: 5px;
+}
+.save-button{
+    width: 20px;
+    display: inline-block;
+    text-decoration: none;
+    border: 3px solid #3D4C6C;
+    background-color: #CFA180;
+    color: white;
+    border-radius: 15px;
+    padding: 6px 72px 8px 30px;
+    margin-top: 10px;
+    margin-left: 400px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+}
+.image-column{
+    margin-left: 90px;
+    margin-top: -150px;
+}
+.a-profile-pic {
+    width: 90%;
+    height: 45%;
+    margin-left: 50px;
+    border-radius: 50%;
+}
+.image-button{
+    white-space: nowrap;
+    width: 20px;
+    display: block;
+    text-decoration: none;
+    border: 3px solid #3D4C6C;
+    background-color: #CFA180;
+    color: white;
+    border-radius: 15px;
+    padding: 6px 100px 8px 25px;
+    margin-top: 10px;
+    margin-left: 100px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
 }
 
 /* SELLER HOME */
@@ -438,5 +567,17 @@ input[type=text]{
     font-weight: bold;
     text-align: center;
     cursor: pointer;
+}
+.header-profile h4{
+    font-family: 'Amarante', serif;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 12px;
+}
+.header-profile p{
+    margin-top: -22px;
+    font-size: 16px;
+    font-weight: 400;
+    letter-spacing: 5px;
 }
   
