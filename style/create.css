@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: "Darker Grotesque", sans-serif;
+  }
+  body {
+    background-color: #3d4c6c;
+    color: #f5e6ca;
+  }
+  
+  /* HEADER */
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5e6ca;
+    padding-left: 20px;
+    padding-right: 20px;
+    height: 8vh;
+    z-index: 1;
+  }
+  .header {
+    width: 100%;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+  }
+  .header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: cent;
+  }
+  .logo {
+    font-family: "Amarante", serif;
+    color: #3d4c6c;
+    text-decoration: none;
+    letter-spacing: 10px;
+    font-size: 40px;
+    margin-right: 10px;
+  }
+  .nav_links a {
+    font-family: "Amarante", serif;
+    color: #3d4c6c;
+    text-decoration: none;
+  }
+  .nav_links {
+    list-style: none;
+    display: flex;
+    font-size: 26px;
+  }
+  .nav_links li {
+    padding: 5px 20px;
+  }
+  .whole{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+  }
+  /* CONTENTS */
+  .box-header h1{
+     font-size: 80px;
+     font-weight: 400;
+     font-family: "Amarante", serif;
+  }
+  .box{
+    width: 700px;
+    height: 270px;
+    background-color: #f5e6ca;
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 50px;
+    margin-right: 50px;
+  }
+  .box-contents{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  input[name="username"], input[name="password"], input[name="confirm"] {
+    width: 500px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3d4c6c;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #f8efef;
+  }
+  .create{
+    width: 350px;
+    height: 45px;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #CFA180;
+    border: 2px solid #3D4C6C;
+    border-color: #3D4C6C;
+    margin-top: 5px;
+    color: #F8EFEF;
+    font-weight: bolder;
+    font-size: 20px;
+  }

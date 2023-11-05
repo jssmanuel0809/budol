@@ -61,9 +61,25 @@ input[name="search"] {
   padding: 5px 20px;
 }
 
+/* CONTENTS */
+.whole{
+  display: flex;
+  flex-direction: row-reverse;
+}
+.apply {
+  width: 90%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .box-contents {
   width: 840px;
-  height: 370px;
+  height: 620px;
   background-color: #f5e6ca;
   border-radius: 10px;
   padding: 10px;
@@ -81,42 +97,85 @@ fieldset {
 }
 input[name="name"],
 input[name="phone"] {
-    width: 350px;
-    height: 45px;
-    font-size: 20px;
-    border: 2px solid #3d4c6c;
-    border-radius: 30px;
-    padding: 8px 10px 10px 10px;
-    margin: 8px 0;
-    background-color: #f8efef;
+  width: 350px;
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid #3d4c6c;
+  border-radius: 30px;
+  padding: 8px 10px 10px 10px;
+  margin: 8px 0;
+  background-color: #f8efef;
 }
 .gr2 {
   display: flex;
+}
+input[name="city"],
+input[name="zip"] {
+  width: 200px;
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid #3d4c6c;
+  border-radius: 30px;
+  padding: 8px 10px 10px 10px;
+  margin: 8px 0;
+  margin-left: 30px;
+  background-color: #f8efef;
+}
+.gr3 {
+  display: flex;
   justify-content: space-evenly;
 }
-input[name="seller"],
-input[name="email"] {
-    width: 350px;
-    height: 45px;
-    font-size: 20px;
-    border: 2px solid #3d4c6c;
-    border-radius: 30px;
-    padding: 8px 10px 10px 10px;
-    margin: 8px 0;
-    background-color: #f8efef;
+input[name="address"] {
+  width: 735px;
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid #3d4c6c;
+  border-radius: 30px;
+  padding: 8px 10px 10px 10px;
+  margin: 8px 0;
+  background-color: #f8efef;
+}
+.gr4 {
+  display: flex;
+  justify-content: space-evenly;
+}
+input[name="email"],
+input[name="password"] {
+  width: 350px;
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid #3d4c6c;
+  border-radius: 30px;
+  padding: 8px 10px 10px 10px;
+  margin: 8px 0;
+  background-color: #f8efef;
+}
+.gr5 {
+  display: flex;
+  justify-content: space-evenly;
+}
+input[name="username"],
+input[name="confirm"] {
+  width: 350px;
+  height: 45px;
+  font-size: 20px;
+  border: 2px solid #3d4c6c;
+  border-radius: 30px;
+  padding: 8px 10px 10px 10px;
+  margin: 8px 0;
+  background-color: #f8efef;
 }
 
-/* DROPDOWN */
-.box-dropdown {
-  display: flex;
-  justify-content: center;
+.quote {
+  margin-right: 30px;
 }
-h1 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-left: -20px !important;
-  letter-spacing: 0.8px;
-  text-align: center;
+.quote h1 {
+  font-family: "Amarante", serif;
+  font-size: 105px;
+  font-weight: 300;
+}
+.quote p {
+  font-size: 16px;
 }
 .setting-description {
   background-color: #f8efef;
@@ -125,6 +184,18 @@ h1 {
   width: 100% !important;
   max-width: 483px;
 }
+
+/** dropdown **/
+.box-dropdown {
+  display: flex;
+}
+h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: -10px !important;
+  letter-spacing: 0.8px;
+}
+
 .setting-description-text {
   padding-top: 18px !important;
   color: #3d4c6c;
@@ -253,6 +324,9 @@ svg {
   margin-right: 20px;
 }
 
+.gender-dropdown {
+  width: calc(25% - 20px);
+}
 .create{
   width: 365px;
   height: 45px;
@@ -265,34 +339,4 @@ svg {
   color: #F8EFEF;
   font-weight: bolder;
   font-size: 20px;
-}
-
-/* BUTTON */
-#upload {
-  position: relative;
-  overflow: hidden;
-  display: inline-block;
-}
-
-#upload input[type=file] {
-  font-size: 100px;
-  position: absolute;
-  left: 0;
-  top: 0;
-  opacity: 0;
-}
-
-#upload .btn {
-  border: 2px solid gray;
-  color: gray;
-  background-color: white;
-  padding: 8px 20px;
-  border-radius: 8px;
-  font-size: 20px;
-  font-weight: bold;
-}
-
-#upload .btn:hover {
-  border-color: black;
-  color: black;
 }

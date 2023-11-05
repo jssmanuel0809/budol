@@ -60,31 +60,36 @@ input[name="search"] {
 .nav_links li {
   padding: 5px 20px;
 }
-
-/* CONTENTS */
-.whole{
-  display: flex;
-  flex-direction: row-reverse;
-}
-.apply {
+.box-whole{
   width: 90%;
   position: absolute;
-  top: 50%;
-  transform: translate(-50%,s -50%);
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   text-align: center;
   display: flex;
   flex-direction: row;
   align-items: center;
 }
-
-.box-contents {
+.box {
   width: 840px;
-  height: 620px;
+  height: 370px;
   background-color: #f5e6ca;
   border-radius: 10px;
   padding: 10px;
   margin-top: 50px;
   margin-right: 50px;
+}
+.application .quote h1 {
+  font-family: "Amarante", serif;
+  font-size: 105px;
+  font-weight: 300;
+}
+.quote{
+  margin-right: 100px;
+}
+.quote p {
+  font-size: 16px;
 }
 
 /* FORMS */
@@ -97,85 +102,42 @@ fieldset {
 }
 input[name="name"],
 input[name="phone"] {
-  width: 350px;
-  height: 45px;
-  font-size: 20px;
-  border: 2px solid #3d4c6c;
-  border-radius: 30px;
-  padding: 8px 10px 10px 10px;
-  margin: 8px 0;
-  background-color: #f8efef;
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3d4c6c;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #f8efef;
 }
 .gr2 {
   display: flex;
-}
-input[name="city"],
-input[name="zip"] {
-  width: 200px;
-  height: 45px;
-  font-size: 20px;
-  border: 2px solid #3d4c6c;
-  border-radius: 30px;
-  padding: 8px 10px 10px 10px;
-  margin: 8px 0;
-  margin-left: 30px;
-  background-color: #f8efef;
-}
-.gr3 {
-  display: flex;
   justify-content: space-evenly;
 }
-input[name="address"] {
-  width: 735px;
-  height: 45px;
-  font-size: 20px;
-  border: 2px solid #3d4c6c;
-  border-radius: 30px;
-  padding: 8px 10px 10px 10px;
-  margin: 8px 0;
-  background-color: #f8efef;
-}
-.gr4 {
-  display: flex;
-  justify-content: space-evenly;
-}
-input[name="email"],
-input[name="password"] {
-  width: 350px;
-  height: 45px;
-  font-size: 20px;
-  border: 2px solid #3d4c6c;
-  border-radius: 30px;
-  padding: 8px 10px 10px 10px;
-  margin: 8px 0;
-  background-color: #f8efef;
-}
-.gr5 {
-  display: flex;
-  justify-content: space-evenly;
-}
-input[name="username"],
-input[name="confirm"] {
-  width: 350px;
-  height: 45px;
-  font-size: 20px;
-  border: 2px solid #3d4c6c;
-  border-radius: 30px;
-  padding: 8px 10px 10px 10px;
-  margin: 8px 0;
-  background-color: #f8efef;
+input[name="seller"],
+input[name="email"] {
+    width: 350px;
+    height: 45px;
+    font-size: 20px;
+    border: 2px solid #3d4c6c;
+    border-radius: 30px;
+    padding: 8px 10px 10px 10px;
+    margin: 8px 0;
+    background-color: #f8efef;
 }
 
-.quote {
-  margin-right: 30px;
+/* DROPDOWN */
+.box-dropdown {
+  display: flex;
+  justify-content: center;
 }
-.quote h1 {
-  font-family: "Amarante", serif;
-  font-size: 105px;
-  font-weight: 300;
-}
-.quote p {
-  font-size: 16px;
+.setting-description h1 {
+  font-size: 20px;
+  font-weight: 800;
+  margin-left: -20px !important;
+  letter-spacing: 0.8px;
+  text-align: center;
 }
 .setting-description {
   background-color: #f8efef;
@@ -184,18 +146,6 @@ input[name="confirm"] {
   width: 100% !important;
   max-width: 483px;
 }
-
-/** dropdown **/
-.box-dropdown {
-  display: flex;
-}
-h1 {
-  font-size: 20px;
-  font-weight: 800;
-  margin-left: -10px !important;
-  letter-spacing: 0.8px;
-}
-
 .setting-description-text {
   padding-top: 18px !important;
   color: #3d4c6c;
@@ -242,6 +192,10 @@ h1 {
 
 svg {
   transition: all 0.3s;
+}
+.icon{
+  fill: #3D4C6C;
+  margin-left: 50%;
 }
 
 .wrapper-dropdown::before {
@@ -324,11 +278,51 @@ svg {
   margin-right: 20px;
 }
 
-.gender-dropdown {
-  width: calc(25% - 20px);
-}
 .create{
   width: 365px;
+  height: 45px;
+  cursor: pointer;
+  border-radius: 30px;
+  background-color: #CFA180;
+  border: 2px solid #3D4C6C;
+  border-color: #3D4C6C;
+  margin-top: 5px;
+  color: #F8EFEF;
+  font-weight: bolder;
+  font-size: 20px;
+}
+
+/* BUTTON */
+#upload {
+  position: relative;
+  overflow: hidden;
+}
+
+#upload input[type=file] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+#upload .btn {
+  width: 350px;
+  height: 45px;
+  border: 2px solid #3D4C6C;
+  color: #3d4c6c;
+  background-color: #F8EFEF;
+  padding: 8px 20px;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.whole{
+  display: flex;
+  justify-content: space-evenly;
+}
+.send{
+  width: 350px;
   height: 45px;
   cursor: pointer;
   border-radius: 30px;

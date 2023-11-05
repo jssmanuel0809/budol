@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>BUDOL</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- LINKS -->
+        <link rel="stylesheet" href="style/register.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Amarante&family=Darker+Grotesque:wght@400;600;700;900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <a class="logo">BUDOL!</a>
+                <input type="text" id="search" name="search" placeholder="SEARCH">
+            </div>
+            <div class="header-content">
+                <nav>
+                    <ul class="nav_links">
+                        <li><a href="index.html">HOME</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        <!-- Body contents -->
+      <div class="whole">
+        <section class="apply">
+            <div class="quote">
+                <h1>BUDOL!</h1>
+                <p>AN ORDER HUB FOR BOTH SELLERS AND BUYERS:
+                    <br> FOR ALL YOUR BUDOL NEEDS
+                </p>
+            </div>
+            
+            <div class="box">
+                <div class="box-contents">
+                <!-- forms -->
+                <fieldset class="gr1">
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <input type="text" id="phone" name="phone" placeholder="Phone">
+                </fieldset>
+                <fieldset class="gr2">
+                    <input type="text" id="city" name="city" placeholder="City">
+                    <input type="text" id="zip" name="zip" placeholder="Zip Code">
+                </fieldset>
+                <fieldset class="gr3">
+                    <input type="text" id="address" name="address" placeholder="Address">
+                </fieldset>
+                <fieldset class="gr4">
+                    <input type="text" id="email" name="email" placeholder="Email Address">
+                    <input type="text" id="password" name="password" placeholder="Password">
+                </fieldset>
+                <fieldset class="gr5">
+                    <input type="text" id="username" name="username" placeholder="Username">
+                    <input type="text" id="confirm" name="confirm" placeholder="Confirm Password">
+                </fieldset>
+                <!-- forms end -->
+                <!-- bday dropdown -->
+                <p>Date of Birth</p>
+              <div>
+                <fieldset class="box-dropdown">
+                <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Month</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="monthDropdown">
+                      <!-- Month dropdown content -->
+                      <span class="selected-display" id="monthDisplay">Pick a month!</span>
+                      <svg class="arrow" id="monthArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Day</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="dayDropdown">
+                      <!-- Day dropdown content -->
+                      <span class="selected-display" id="dayDisplay">Pick a day!</span>
+                      <svg class="arrow" id="dayArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="birthday-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Year</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="yearDropdown">
+                      <!-- Year dropdown content -->
+                      <span class="selected-display" id="yearDisplay">Pick a year!</span>
+                      <svg class="arrow" id="yearArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+            
+                  <div class="gender-dropdown">
+                    <div class="setting-description">
+                      <div class="setting-description-text" style="margin-left: 15px">
+                        <h1>Gender</h1>
+                      </div>
+                    </div>
+                    <div class="wrapper-dropdown" id="genderDropdown">
+                      <!-- Gender dropdown content -->
+                      <span class="selected-display" id="genderDisplay">Pick a gender!</span>
+                      <svg class="arrow" id="genderArrow" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" class="transition-all ml-auto rotate-180">
+                        <path d="M7 14.5l5-5 5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg>
+                      <ul class="dropdown">
+                      </ul>
+                    </div>
+                  </div>
+                  </div>
+                  <button class="create" onclick="create-button()">CREATE ACCOUNT</button>
+                </div>
+            </fieldset>
+            </div>
+            
+              <script src="components/register.js"></script>
+                </div>
+            </div>
+    </div>
+        </section>
+    </body>
